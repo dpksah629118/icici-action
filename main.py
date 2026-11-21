@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-app=FastAPI()
+
+app = FastAPI()
 
 @app.get("/home")
 def welcomeMessage():
@@ -8,8 +9,3 @@ def welcomeMessage():
 @app.get("/login")
 def loginApp():
     return {"message": "welcome to login page"}
-
-@app.get("/register")
-def registerApp():
-    return {"message": "welcome to registration page"}
-
